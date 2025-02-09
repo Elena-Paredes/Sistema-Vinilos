@@ -1,0 +1,197 @@
+/* /styles/login.css*/
+/* Estilos específicos para las páginas de login y registro */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Quicksand:wght@300..700&family=Sora:wght@100..800&display=swap');
+/*Letra del titulo del formulario*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+/*Letra para los campos de los formularios*/
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.login-page,
+.register-page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #fff9e3, #f5c86a, #e96a50, #348c74);
+}
+
+.login-page .login-container,
+.register-page .login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.login-page .login-box,
+.register-page .login-box {
+  background: linear-gradient(to bottom right, #fff9e3, #f5c86a); /* Beige y amarillo claro */
+  padding: 60px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 500px;
+}
+
+.login-page .login-logo img,
+.register-page .login-logo img {
+  width: 150px;
+  height: 50xp;
+  margin-bottom: 20px;
+}
+
+/* Texto de los encabezados */
+.login-page .login-box h2,
+.register-page .login-box h2 {
+  color: #e96a50; /* Rojo anaranjado */
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-family: "Oswald", sans-serif;
+}
+
+.login-page .login-field,
+.register-page .login-field {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.login-page .login-field select,
+.register-page .login-field select {
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  border: none;
+  border-radius: 10px;
+  font-family: "Saira Semi Condensed", sans-serif;
+  background-color: #fff9e3; /* Beige claro */
+  color: #348c74; /* Verde profundo */
+}
+
+.login-page .login-icon,
+.register-page .login-icon {
+  position: absolute;
+  left: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #f5c86a; 
+}
+
+.login-page .login-field input[type="text"],
+.login-page .login-field input[type="password"],
+.register-page .login-field input[type="text"],
+.register-page .login-field input[type="password"],
+.register-page .login-field input[type="email"],
+.register-page .login-field input[type="tel"] {
+  width: 100%;
+  padding: 15px 10px 10px 45px;
+  border: none;
+  border-radius: 10px;
+  font-family: "Saira Semi Condensed", sans-serif;
+  background-color: #fff9e3; /* Beige claro */
+  color: #348c74; /* Verde profundo */
+}
+
+.login-page button,
+.register-page button {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e96a50; /* Rojo anaranjado */
+  color: #fff; /* Blanco */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-page button:hover,
+.register-page button:hover {
+  background-color: #348c74; /* Verde profundo */
+  color: #fff;
+}
+
+.login-page .forgot-password,
+.register-page .forgot-password {
+  color: #348c74; /* Verde profundo */
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+}
+
+.login-page .forgot-password:hover,
+.register-page .forgot-password:hover {
+  text-decoration: underline;
+}
+
+
+/*FOTO DE PERFUIL*/
+.user-profile-page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #fff9e3, #f5c86a, #e96a50, #348c74);
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.login-box {
+  background: linear-gradient(to bottom right, #fff9e3, #f5c86a);
+  padding: 60px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 500px;
+}
+
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px; /* Cuadrada */
+  margin-bottom: 20px;
+}
+
+.user-info {
+  text-align: left;
+}
+
+.user-info p {
+  color: #348c74;
+  font-size: 20px;
+  margin: 10px 0;
+  font-family: "Saira Semi Condensed", sans-serif;
+}
+
+.user-info strong {
+  color: #e96a50; /* Rojo anaranjado */
+}
+
+.image-preview img {
+  border: 2px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+  

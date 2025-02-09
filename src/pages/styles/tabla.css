@@ -1,0 +1,97 @@
+/*Sección de tabla*/
+.table-section {
+    background-color: #EFE5C2; /* Color de fondo para la sección */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  }
+  
+  .table-section h2 {
+    font-family: "Archivo Black", sans-serif;
+    color: #e96a50; 
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  .table {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  
+  .table th {
+    font-family: "Manrope", sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #348c74; /* Color de encabezado */
+    text-align: center;
+    padding: 0.75rem;
+  }
+  
+  .table td {
+    font-family: "Manrope", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: #23306a;
+    padding: 0.75rem;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Fondo alternativo para filas */
+  }
+  
+  .table tr:hover {
+    background-color: #e8f5e9; /* Efecto hover */
+    transform: scale(1.01); /* Ligera expansión */
+    transition: all 0.3s;
+  }
+  
+  .btn {
+    font-family: "Saira Semi Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    background-color: #e96a50; /* Color del botón */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #348c74; /* Color de hover */
+    transform: translateY(-3px);
+  }
+  
+  .table-responsive {
+    overflow-x: auto; /* Permite scroll horizontal si es necesario */
+    border-radius: 10px;
+  }
+  
+.table img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-info {
+    background-color: #348c74; /* Color de fondo personalizado */
+    border-color: #348c74;
+    color: white;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-info:hover {
+    background-color: #276653; /* Color al pasar el mouse */
+    border-color: #276653;
+  }
+  
+  

@@ -1,0 +1,68 @@
+.vinyl-info-page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #fff9e3, #f5c86a, #e96a50, #348c74);
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.login-box {
+  background: linear-gradient(to bottom right, #fff9e3, #f5c86a);
+  padding: 60px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 500px;
+}
+
+.vinyl-image-container {
+  display: flex;
+  flex-direction: column; /* Colocar la imagen encima del botón */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Espaciado entre el contenedor de imagen y el resto */
+}
+
+.vinyl-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px; /* Espaciado entre la imagen y el botón de carga */
+  border: 2px solid #e96a50; /* Estilo opcional para destacar la imagen */
+}
+
+input[type="file"] {
+  margin-top: 10px; /* Espaciado uniforme para los botones de carga */
+  text-align: center;
+  cursor: pointer;
+}
+
+.vinyl-info p {
+  color: #348c74;
+  font-size: 16px;
+  margin: 10px 0;
+  font-family: "Saira Semi Condensed", sans-serif;
+}
+
+.vinyl-info strong {
+  color: #e96a50;
+}
+
+.music-section,
+.video-section {
+  margin-top: 20px;
+}
+
+  

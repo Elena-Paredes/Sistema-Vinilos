@@ -1,0 +1,437 @@
+/* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/*Fuentes del carrusel*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* /src/pages/styles/index.css */
+
+header, nav, .nav-logo, nav ul, nav ul li, nav ul li a, .services-container, .service-item {
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  background-color: #EFE5C2;
+  color: #23306a;
+}
+.section-divider {
+  display: none; /* Si hay un elemento específico que agrega una línea o divisor, lo ocultamos */
+}
+
+header {
+  background-color: white;
+  padding: -10px 0px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  border-bottom: 1.0px solid #32654F;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 0px; 
+}
+
+.nav-logo .logo {
+  height: 100px; /* Ajusta este valor para cambiar el tamaño del logo */
+  width: 100px; /* Mantiene la proporción del logo */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  /*margin: 15px;*/
+  margin-top: 50px;
+  padding: 0;
+  width: 100%;
+  
+}
+
+nav ul li {
+  margin: 0px 9px;
+  position: relative;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+
+}
+
+nav ul li a:hover {
+  color: #888127;
+}
+
+nav ul li.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav ul .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 100%;
+  left: 0;
+}
+
+nav ul .dropdown-content li {
+  padding: 12px 16px;
+}
+
+nav ul .dropdown-content li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  
+}
+
+nav ul .dropdown-content li a:hover {
+  background-color: #888127;
+  color: white;
+}
+/* --------------- Configuraciones dentro del carrusel ------------------*/
+.hero {
+  position: relative;
+  text-align: center;
+  color: #333;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/fondo1.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+/* --------------- Configuraciones del carrusel ------------------*/
+.carousel {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -0%);
+  bottom: auto;
+  text-align: center;
+}
+
+.carousel-caption h1 {
+  font-size: 2rem; 
+  font-family: "Archivo Black", sans-serif;  
+}
+
+.cta-button {
+  background-color: transparent;
+  color: #E12D24;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-top: 20px;
+  font-family: 'Sora', sans-serif; /* Tipo de fuente del botón*/
+}
+
+.carousel-content h1 {
+  font-size: 4rem; 
+  font-family: "Archivo Black", sans-serif; 
+}
+
+.carousel-content h2 {
+  font-size: 2rem; 
+  font-family: "DM Sans", sans-serif; 
+}
+
+/* ---------------- Estilo de Sobre Nosotros -------------------*/
+.about-us {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #EFE5C2;
+  color: #23306a;
+}
+
+.about-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-us h3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  color: #E79601;
+}
+
+.about-us-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-item {
+  flex: 1;
+  max-width: 45%;
+  margin: 20px;
+  text-align: left;
+}
+
+.about-us-item h4 {
+  font-size: 1.5rem;
+  font-family: "Archivo Black", sans-serif; 
+  margin-bottom: 15px;
+}
+
+.about-us-item p {
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.about-us-item ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.about-us-item ul li {
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  line-height: 2.0;
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.about-us-item ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #888127;
+}
+
+.about-us-image {
+  flex: 1;
+  max-width: 45%;
+  margin: 20px;
+}
+
+.about-us-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ------------------ Estilo de Servicios ------------------ */
+.services {
+  text-align: center;
+  padding: 5rem 0;
+  background-color: #EFE5C2; 
+  margin-top: 2rem;
+}
+
+.services h2 {
+  font-family: "Archivo Black", sans-serif;
+  color: #e96a50; 
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-between; /* Espaciado uniforme entre tarjetas */
+  flex-wrap: wrap; /* Permite que las tarjetas se distribuyan en múltiples filas */
+  gap: 2rem; /* Espacio entre las tarjetas tanto horizontal como vertical */
+  margin-bottom: 2rem; /* Espacio entre las filas */
+}
+
+
+.service-item {
+  flex: 1 1 calc(30% - 1rem); /* Tamaño para 3 tarjetas por fila */
+  max-width: 30%;
+  margin: 0 auto;
+  padding: 2rem; /* Más espacio interno */
+  background-color: #fff9e3;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.service-item img {
+  width: 120px; /* Incrementar el tamaño del icono */
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.service-item h3 {
+  margin-bottom: 1rem;
+  color: #348c74;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem; /* Más grande */
+}
+
+.service-item p {
+  margin-bottom: 1.5rem;
+  color: #555;
+  font-size: 1rem; /* Ajustar texto */
+}
+
+.read-more {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #e96a50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Saira Semi Condensed", sans-serif;
+  font-size: 1.2rem; 
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 1rem;
+}
+
+.read-more:hover {
+  background-color: #348c74;
+  transform: translateY(-3px);
+}
+
+
+
+/* Estilo del footer */
+.footer {
+  background-color: #EFE5C2; 
+  color: #333; 
+  padding: 1.5rem 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%; 
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+.content {
+  flex: 1;
+}
+
+.user-profile {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.user-profile {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  object-fit: cover;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px; /* Espaciado respecto a la imagen */
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  z-index: 100;
+  width: 150px;
+  padding: 0;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu ul li {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.dropdown-menu ul li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu ul li a {
+  text-decoration: none;
+  color: #23306a;
+  font-size: 1rem;
+  display: block;
+  padding: 10px 15px;
+}
+
+.dropdown-menu ul li a:hover {
+  background-color: #888127;
+  color: white;
+}
+
+.table img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+
